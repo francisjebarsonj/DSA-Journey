@@ -1,8 +1,9 @@
-import java.util.HashMap;
-import java.util.Map;
+package com.dsa.code.Arrays;
 
-class Solution {
-    public boolean containsDuplicate(int[] nums) {
+import java.util.HashMap;
+
+class ContainsDuplicates_217 {
+    public static boolean containsDuplicate(int[] nums) {
         // Create a HashMap to store each number encountered in the array
         // as a key. The value (Long in this case) is used to track if we've seen the number.
         HashMap<Integer, Long> dupCount = new HashMap<>();
@@ -27,5 +28,10 @@ class Solution {
         // statement inside the 'else' block was never executed), it means all elements
         // in the array are unique. In this case, we return false.
         return false;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(containsDuplicate(new int[]{1, 2, 3, 3}));
+
     }
 }
