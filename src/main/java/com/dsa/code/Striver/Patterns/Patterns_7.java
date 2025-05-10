@@ -2,7 +2,13 @@ package com.dsa.code.Striver.Patterns;
 
 public class Patterns_7 {
     public static void main(String[] args) {
-
+        /*
+            *
+           ***
+          ******
+         *********
+         *
+         */
         for (int x = 0; x <=5; x++) {
             System.out.print(" ");
         }
