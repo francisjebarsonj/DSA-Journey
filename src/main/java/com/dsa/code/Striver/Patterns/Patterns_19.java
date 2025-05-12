@@ -3,18 +3,38 @@ package com.dsa.code.Striver.Patterns;
 public class Patterns_19 {
     public static void main(String[] args) {
 
-         /*
- 
-         * */
-        char[] c = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+        for (int j = 0; j <= 5; j++) {
+            for (int k = 5; k >= j; k--) {
+                System.out.print("*");
+            }
+            for (int s = 0; s < j; s++) {
+                System.out.print(" ");
+            }
+            for (int s = j; s > 0; s--) {
+                System.out.print(" ");
+            }
+            for (int k = 5; k >= j; k--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int j = 0; j <= 5; j++) {
 
-        int index = 4;
-        for(int i=0;i<5;i++){
-            for(int j=i;j>=0;j--){
-                // Trick is to find reversal order so we are subtracting with 'j'
-                System.out.print(c[index-j]);
+            for (int k = 0; k <= j; k++) {
+                System.out.print("*");
+            }
+            for (int s = 5; s > j; s--) {
+                System.out.print(" ");
+            }
+            for (int s = 5; s>j; s--) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k <= j; k++) {
+                System.out.print("*");
             }
             System.out.println();
         }
     }
+
+
 }
