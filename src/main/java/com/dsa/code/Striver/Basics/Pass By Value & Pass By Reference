@@ -1,0 +1,62 @@
+//Java is always pass by value
+
+why?
+
+1. Primitive Types(int , float , boolean . etc)
+
+Java passes a copy of the value.
+
+void modify(int x){
+x = 10;
+}
+
+int num = 5;
+modify(num);
+System.out.println(num); => Output: 5
+
+Here
+x is a copy of num. Changing x does not affect num.
+
+
+2.Objects (e.g., arrays, custom classes)
+
+    class Dog{
+     String name;
+    }
+
+    void changeName(Dog d){
+     d.name = "Fido";
+    }
+
+    Dog myDog = new Dog();
+
+    myDog.name = "maddy";
+
+    changeName(myDog);
+
+    System.out.println(myDog); => Output: Fido
+
+Here reference is passed by value. You're changing the object that the reference points to,
+which affects the original.
+
+But Here in the below example
+
+    void changeName(Dog g){
+        g = new Dog(); // now brand new object is created for local copy of reference
+        g.name = "Lucy";
+    }
+
+    Dog myDog = new Dog();
+
+    myDog.name = "Maddy";
+
+    changeName(myDog);
+
+    System.out.println(myDog.name); //Output: Maddy
+
+    d is a copy of the reference, so assigning it to a new Dog only affects the copy,
+    not the original reference.
+
+
+
+
