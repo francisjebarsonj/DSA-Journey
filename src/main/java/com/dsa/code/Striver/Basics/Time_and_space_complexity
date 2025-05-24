@@ -1,0 +1,41 @@
+//Time and Space Complexity
+
+Big (O)
+-------
+- measures efficiency of the code
+- you have to understand this to write code efficiently
+
+Big(O) - It is a way of comparing code one and code two mathematically about how efficiently they run.
+
+Time Complexity
+----------------
+
+Let say we have stopwatch and we run code one and we start the stopwatch and it runs for 15 seconds.
+
+Now we reset the stopwatch and we run code two and code two runs a lot longer than 15 seconds.
+
+Based on this you would say that code one is better than code two you can measure it. This is called time complexity
+
+
+- The thing about time complexity is that it is not measured in time.
+
+Because if you took the same code and run it on computer that runs twice as fast , it would complete twice as fast.
+It doesn't make the code any better, it just means that the computer is better.
+
+So it is measured in the number of operations that it takes to complete something.
+
+Space Complexity
+----------------
+
+Let say code one , while it runs very fast comparatively, let's say it takes up a lot of memory when it runs.
+
+And,
+
+Code two even through takes much longer time to finish may be it takes up less memory.
+
+If preserving memory space is your most important priority and you don't mind having some extra time complexity may be code two is better.
+
+
+
+
+
