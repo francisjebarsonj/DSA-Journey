@@ -23,6 +23,22 @@ When dealing with time and space complexity you will see these three greek lette
 
 Technically Big O is always worst case.
 
+Let's assume the code below.
+
+class Example{
+    public static void main(String[] arg){
+     printItems(5);
+    }
+
+    private static void printItems(int n){
+     for(int i=0;i<n;i++){
+     System.out.println(i);
+     }
+    }
+}
+
+
+
 
 
 
